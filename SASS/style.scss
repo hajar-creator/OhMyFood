@@ -1,1 +1,3 @@
-@import '../SASS/normalize';
+@forward 'normalize';
+@use '../SASS/_partials/' as p;
+@use '../SASS/_layout/' as l;
