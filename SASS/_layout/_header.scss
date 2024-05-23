@@ -1,0 +1,12 @@
+@use '../_partials' as p;
+
+.header__logo{
+    text-align: center;
+    @include p.logo-shadow;
+    &--img{
+        width: 197px;
+        height: 36px;
+        padding: 10px;
+        margin-top: 5px;
+    }
+}

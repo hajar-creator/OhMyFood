@@ -1,0 +1,22 @@
+@use '../_partials' as p;
+
+.search-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: p.$form-background;
+    height: 50px;
+    gap: 15px;
+    &__form{
+        border: none;
+        text-align: center;
+        color: p.$form-text;
+        width: 109px;
+        background-color: p.$form-background;
+        font-family: p.$text-font;
+        font-weight: 500;
+    }
+    &__icon{
+        color: p.$form-text;
+    }
+}
