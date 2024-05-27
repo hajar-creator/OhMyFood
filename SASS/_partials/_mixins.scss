@@ -1,6 +1,9 @@
 @mixin button-shadow{
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.15));
 }
-@mixin logo-shadow{
+@mixin h-shadow{
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+@mixin search-shadow{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.251);
 }

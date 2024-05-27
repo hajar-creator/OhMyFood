@@ -1,5 +1,4 @@
 @use '../_partials' as p;
-
 .search-bar{
     display: flex;
     justify-content: center;
@@ -7,6 +6,7 @@
     background-color: p.$form-background;
     height: 50px;
     gap: 15px;
+    @include p.search-shadow;
     &__form{
         border: none;
         text-align: center;

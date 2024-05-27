@@ -2,15 +2,31 @@
 .footer{
     display: flex;
     flex-direction: column;
+    gap: 16px;
     background-color: p.$form-text;
     padding: 22px 25px;
     
     &__list{
         display: flex;
         align-items: center;
+        gap: 11px;
         color: p.$white;
-        font-family: p.$text-font
+        font-family: p.$text-font;
+        font-weight: 400;
+        &--icon{
+            font-size: 14px;
+            width: 11px;
+            height: 13px;
+        }
         
+    }
+    &__un{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+       
     }
 }
 
