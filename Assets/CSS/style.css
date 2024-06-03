@@ -555,4 +555,29 @@ input[type=checkbox] {
 }
 .search-bar__icon {
   color: #353535;
+}
+
+.header__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 63px;
+}
+.header__container__logo {
+  text-align: center;
+}
+.header__container__logo--img {
+  width: 162px;
+  height: 30px;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.header__arrow {
+  position: absolute;
+  left: 17px;
+  color: #353535;
+  font-size: 16px;
 }/*# sourceMappingURL=style.css.map */
