@@ -474,15 +474,27 @@ template {
   font-size: 18px;
 }
 
-.article-icon {
-  font-size: 22px;
-  margin-right: 10px;
-  transition: all 100ms;
+input[type=checkbox] {
+  display: none;
 }
 
-.article-icon:active {
-  background-color: linear-gradient(to bottom, #FF79DA, #9356DC);
-  background-clip: border-box;
+.article-icon {
+  position: absolute;
+  right: 25px;
+  font-size: 22px;
+}
+
+.fa-heart, input {
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+}
+
+:checked + .fa-heart {
+  font-weight: bold;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .footer {
