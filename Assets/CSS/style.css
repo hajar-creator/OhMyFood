@@ -396,10 +396,10 @@ template {
   position: absolute;
   left: -10px;
 }
-.fonctionnement__menu--icon-grey {
+.fonctionnement__menu--icon {
   color: #7E7E7E;
 }
-.fonctionnement__menu--icon-purple {
+.fonctionnement__menu--icon:hover {
   color: #9356DC;
 }
 .fonctionnement__menu--text {

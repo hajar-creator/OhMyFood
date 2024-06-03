@@ -36,10 +36,10 @@
         position: absolute;
         left: -10px;
     }
-    &--icon-grey{
+    &--icon{
         color: p.$icon-grey;
     }
-    &--icon-purple{
+    &--icon:hover{
         color: p.$purple;
     }
     &--text{
