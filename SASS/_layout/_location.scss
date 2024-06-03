@@ -7,11 +7,10 @@
     height: 50px;
     gap: 15px;
     @include p.search-shadow;
-    &__form{
-        border: none;
+    position: relative;
+    &__text{
         text-align: center;
         color: p.$form-text;
-        width: 109px;
         background-color: p.$form-background;
         font-family: p.$text-font;
         font-weight: 500;
