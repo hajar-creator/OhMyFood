@@ -21,5 +21,12 @@
     position: absolute;
     left: 17px;
     color: p.$form-text;
-    font-size: 16px;
+    font-size: 20px;
+}
+
+/* Larger devices (desktops and laptops, less than 1024px) */
+@media (min-width: 1024px) {
+    .header__container{
+        height: 96px;
+    }
 }
