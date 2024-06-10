@@ -417,7 +417,6 @@ template {
 /* Larger devices (desktops and laptops, less than 1024px) */
 @media (min-width: 1200px) {
   .fonctionnement__choice {
-    display: flex;
     flex-direction: row;
   }
   .fonctionnement {
