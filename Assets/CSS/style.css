@@ -872,4 +872,56 @@ input[type=checkbox] {
   .menu__title--icon {
     position: static;
   }
+}
+.main-container {
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  opacity: 0.9;
+  animation: gone 2s 3s;
+}
+
+.loader {
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  width: 90px;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  animation: bounce 1.4s infinite ease-in-out both;
+}
+
+.circle:nth-child(2) {
+  background-color: #FF79DA;
+  animation-delay: -0.32s;
+}
+
+.circle:nth-child(3) {
+  background-color: #99E2D0;
+  animation-delay: -0.16s;
+}
+
+@keyframes bounce {
+  0%, 80%, 100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+@keyframes gone {
+  50% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0;
+  }
 }/*# sourceMappingURL=style.css.map */

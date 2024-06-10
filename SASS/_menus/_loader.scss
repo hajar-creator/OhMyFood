@@ -1,23 +1,21 @@
-/*html
-<div class="loader">
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-    </div>
-*/
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.main-container {
+    
     height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
+    opacity: 0.9;
+    animation: gone 2s 3s;
 }
 
 .loader {
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     width: 90px;
+    
 }
 
 .circle {
@@ -44,5 +42,14 @@ body {
     }
     40% {
         transform: scale(1);
+    }
+}
+
+@keyframes gone {
+    50%{
+        opacity: 1;
+    }
+    0% {
+        opacity: 0;
     }
 }
