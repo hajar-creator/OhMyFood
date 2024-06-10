@@ -17,3 +17,11 @@
         margin-top: 5px;
     }
 }
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (min-width: 767.98px) {
+    .header__container{
+        box-shadow: none;
+    }
+}

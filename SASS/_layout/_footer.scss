@@ -8,17 +8,17 @@
     
     &__list{
         display: flex;
-        align-items: center;
-        gap: 11px;
+        gap: 13px;
         color: p.$white;
         font-family: p.$text-font;
         font-weight: 400;
         &--icon{
-            font-size: 14px;
             width: 11px;
             height: 13px;
         }
-        
+        &--icon i{
+            font-size: 16px;
+        }
     }
     &__un{
         padding: 0;
@@ -30,6 +30,7 @@
     }
 }
 
+
 .footer__img{
     width: 139px;
     height: 27px;
@@ -38,4 +39,20 @@
 .contact{
     color: p.$white;
     text-decoration: none;
+}
+
+/****** Media queries ***********/
+/* Larger devices (desktops and laptops, less than 1024px) */
+@media (min-width: 1024px) {
+    .footer{
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 100px;
+        height: 114px;
+        padding: 0px 25px;
+        &__un{
+            flex-direction: row;
+            gap: 20px;
+        }
+    }
 }

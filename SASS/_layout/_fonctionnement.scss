@@ -21,7 +21,7 @@
     background-color: p.$background-grey;
     border-radius: 20px;
     gap: 30px;
-    @include p.button-shadow;
+    @include p.h-shadow;
     &--nb{
         background-color: p.$purple;
         color: p.$white;
@@ -34,7 +34,7 @@
         font-size: 14.18px;
         font-weight: 500;
         position: absolute;
-        left: -10px;
+        left: -12px;
     }
     &--icon{
         color: p.$icon-grey;
@@ -44,5 +44,19 @@
     }
     &--text{
         font-weight: 500;
+    }
+}
+
+/****** Media queries ***********/
+/* Larger devices (desktops and laptops, less than 1024px) */
+@media (min-width: 1200px) {
+    .fonctionnement__choice{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .fonctionnement{
+        padding: 50px 180px 50px 180px;
+        margin: 0;
     }
 }

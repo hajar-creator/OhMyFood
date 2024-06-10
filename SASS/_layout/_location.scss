@@ -19,3 +19,11 @@
         color: p.$form-text;
     }
 }
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (min-width: 767.98px) {
+    .search-bar{
+        box-shadow: none;
+     }
+}
