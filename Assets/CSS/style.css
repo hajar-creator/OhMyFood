@@ -869,7 +869,7 @@ input[type=checkbox] {
   width: 100%;
   height: 100vh;
   margin: 0;
-  background-color: #f0f0f0;
+  background-color: #F6F6F6;
   z-index: 3;
   animation: gone 4s linear forwards;
 }
