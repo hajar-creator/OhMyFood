@@ -48,7 +48,7 @@
     flex-direction: column;
     gap: 12px;
     width: 100%;
-    animation: slide 2s ease-in-out;
+    
     .headline__title{
         font-size: 16px;
         font-weight: 300;
@@ -74,7 +74,8 @@
   align-items: center;
   overflow: hidden;
   box-shadow: 0px 4.01px 15.04px 0px #0000001A;
-  font-family: 'Roboto', sans-serif;
+  font-family:p.$text-font;
+  background-color: p.$white;
 }
 .card__txt {
   margin-right: 16px;
@@ -135,15 +136,21 @@
 }
 
 /*animation des delays */
-.menu__cards:nth-child(1) {animation-delay: 0.5s; }
-.menu__cards:nth-child(2) {animation-delay: 1.5s; }
-.menu__cards:nth-child(3) {animation-delay: 3.0s; }
+.appear1{
+  animation: slide 1.5s  0s;
+}
+.appear2{
+  animation: slide 1.5s 0.2s;
+}
+.appear3{
+  animation: slide 1.5s  0.4s;
+}
 
 
 /* Animation definition */
 @keyframes slide{
   0% {
-    transform: translateX(-100%);
+    transform: translateX(-300%);
     opacity: 0;
     
   }

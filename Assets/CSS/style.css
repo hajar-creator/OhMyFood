@@ -727,7 +727,6 @@ input[type=checkbox] {
   flex-direction: column;
   gap: 12px;
   width: 100%;
-  animation: slide 2s ease-in-out;
 }
 .menu__cards .headline__title {
   font-size: 16px;
@@ -755,6 +754,7 @@ input[type=checkbox] {
   overflow: hidden;
   box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1019607843);
   font-family: "Roboto", sans-serif;
+  background-color: #FFFFFF;
 }
 
 .card__txt {
@@ -822,22 +822,22 @@ input[type=checkbox] {
 }
 
 /*animation des delays */
-.menu__cards:nth-child(1) {
-  animation-delay: 0.5s;
+.appear1 {
+  animation: slide 1.5s 0s;
 }
 
-.menu__cards:nth-child(2) {
-  animation-delay: 1.5s;
+.appear2 {
+  animation: slide 1.5s 0.2s;
 }
 
-.menu__cards:nth-child(3) {
-  animation-delay: 3s;
+.appear3 {
+  animation: slide 1.5s 0.4s;
 }
 
 /* Animation definition */
 @keyframes slide {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(-300%);
     opacity: 0;
   }
   100% {
