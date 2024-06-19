@@ -471,6 +471,7 @@ template {
   width: 100%;
   height: 187px;
   border-radius: 20px 20px 0px 0px;
+  vertical-align: bottom;
 }
 
 .article__container {
@@ -531,6 +532,9 @@ input[type=checkbox] {
 @media (min-width: 767.98px) {
   .restaurants__link {
     width: calc((100% - 50px) / 2);
+  }
+  .article-link {
+    width: 100%;
   }
   .restaurants__container {
     gap: 50px;
